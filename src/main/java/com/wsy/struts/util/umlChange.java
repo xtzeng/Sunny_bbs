@@ -10,7 +10,7 @@ public class umlChange {
 		umlChange uml=new umlChange();
 		//uml.Change("[_[html]_][_[/html]_]");
 		String s=uml.Change("[_[font|_|color=]_]");
-		//System.out.println(s);
+		System.out.println(s);
 		
 	}
 }
