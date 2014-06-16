@@ -1,7 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="UTF-8" import="java.util.*,com.wsy.struts.bean.*,com.wsy.struts.util.*"%>
-<%@ taglib uri="/WEB-INF/app.tld" prefix="app" %> 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+    pageEncoding="UTF-8" import="java.util.*"%>
 <script type="text/javascript">
 <!--
 function submit2(){
@@ -25,14 +23,13 @@ function submit2(){
 
 <table id="__01" width="1002"  border="0" cellpadding="0" cellspacing="0">
 	<tr>
-		<td  colspan="2">
-			<img src="images/010.gif" width="1002" height="121"/>
-			</td>
+		<td colspan="2">
+			<img src="images/010.gif" width="1002" height="121" alt=""></td>
 	</tr>
 	<tr>
 		<td colspan="2" height="40" background="images/02.gif"><table width="100%" height="33"  border="0">
   <tr>
-    <td width="8%">&nbsp;</td>
+    <td width="7%">&nbsp;</td>
     <td width="54%">  [  <span class="zi"> <%
 				if(session.getAttribute("name")!=null)
 					out.println(session.getAttribute("name"));
@@ -56,18 +53,19 @@ function submit2(){
 		  </td>
 		  <td width="3%" valign="bottom" class="bzzi"><a href="index.do" class="zczi">首页</a></td>
 		  <td width="1%" valign="bottom" class="zczi">|</td>
-    <td width="6%" valign="bottom" class="zczi"><a href="adminlogin.do" class="zczi">管理员登录</a></td>
-  	<td width="1%" valign="bottom" class="zczi">|</td>
+     <td width="6%" valign="bottom" class="zczi"><a href="adminlogin.do" class="zczi">管理员登录</a></td>
+  <td width="1%" valign="bottom" class="zczi">|</td>
     <td width="6%" valign="bottom" class="zczi"><a href="#" class="zczi" onclick="window.location.reload()">刷新主页</a></td>
     <td width="1%" valign="bottom" class="zczi">|</td>
 	<%
 		String iflogin=(String)session.getAttribute("i");
-		if(iflogin==null){
+		String forumid=(String)request.getAttribute("forumId");
+		if(iflogin==null||forumid==null){
 	%>
-    <td width="6%" valign="bottom" class="zczi"><a href="#" onClick="alert('请您首先登录')" class="zczi">发布主题</a></td>
+    <td width="6%" valign="bottom" class="zczi"><a href="#" onClick="alert('请您选择论坛后再发表文章')" class="zczi">发布主题</a></td>
     <%
 	}else{%>
-	<td width="14%" valign="bottom" class="zczi"><a href="newtopic.do?name=<%=session.getAttribute("name") %>&forumid=<%=session.getAttribute("forumId") %>&forumname=<%=request.getParameter("forumname") %>" class="zczi">发布主题</a></td>
+	<td width="15%" valign="bottom" class="zczi"><a href="newtopic.do?name=<%=session.getAttribute("name") %>&forumid=<%=request.getAttribute("forumId") %>&forumname=<%=request.getParameter("forumname") %>" class="zczi">发布主题</a></td>
 	<%}%> 
 	
   
@@ -79,23 +77,24 @@ function submit2(){
 			
 	  </td>
 	</tr>
-<html:form action="login.do" focus="name">
-	<tr>
-		<td width="872" height="63" background="images/03.gif">
 
-			<table width="100%"  border="0">
+	<tr>
+		<td width="872" height="68" background="images/03.gif">
+
+			<table width="100%"  border="0" height="68">
   <tr>
-    <td width="22%" height="24">&nbsp;</td>
-    <td width="30%" id="bgclock" class="zi">&nbsp;</td>
-    <td width="24%"><span class="zi">用户名：</span><html:text property="name" size="13" maxlength="20"/></td>
-    <td width="24%"><span class="zi">密码：</span><html:password property="password" size="13" maxlength="20"/></td>
+    <td width="22%" height="32">&nbsp;</td>
+    <td width="37%" id="bgclock" class="zi">&nbsp;</td>
+    <td width="11%">&nbsp;</td>
+    <td width="30%">&nbsp;</td>
   </tr>
 
   <tr>
 
     <td colspan="2" class="zczi">&nbsp;</td>
-    <td class="lz">&nbsp;</td>
-    <td class="lz">广阔的空间，我们的天地，F论坛！</td>
+    <td>&nbsp;</td>
+    <td><span class="lz">广阔的空间，我们的天地，F论坛！</span></td>
+
   </tr>
 
 </table>
@@ -103,8 +102,8 @@ function submit2(){
 			
 			
 	  </td>
-		<td width="143">
-			<img src="images/04.gif" alt="" width="130" height="63" border="0" usemap="#Map"></td>
+		<td width="143" background="images/011.gif" height="68">
+			</td>
 	</tr>
 	<tr>
 		<td colspan="2" width="1002" height="30" background="images/05.gif">
@@ -122,8 +121,8 @@ function submit2(){
             <td width="40%"><table width="100%"  border="0" >
               <tr class="whitezi">
                 <td width="22%" height="20">主题：<%=ztcount %>篇</td>
-              <td width="25%">文章：<%=ztAndResponseCount %>篇</td>
-                <td>今日文章：<%= todaycount%>	个</td>
+              <td width="25%">帖子：<%=ztAndResponseCount %>个</td>
+                <td>今日帖子：<%= todaycount%>	个</td>
               </tr>
             </table>
             <%} %>
@@ -131,14 +130,8 @@ function submit2(){
             </td>
           </tr>
         </table>
-			</td>
+	  </td>
 	</tr>
-	
-</html:form>
 	  <app:display/><!-- 自定义标签，用于显示所有论坛信息 -->
+	<!--  %} %-->
 </table>
-
-<map name="Map">
-  <area shape="rect" coords="4,12,52,36" href="#" onClick="return submit2();">
-  <area shape="rect" coords="59,11,104,36" href="register.do">
-</map>

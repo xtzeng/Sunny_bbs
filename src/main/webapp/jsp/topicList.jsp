@@ -1,7 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="UTF-8" import="java.util.*,com.wsy.struts.util.*"%>
-<%@include file="taglib.jsp" %> 
-<%@ taglib uri="/WEB-INF/app.tld" prefix="app" %> 
 <jsp:useBean id="down" scope="page" class="com.wsy.struts.util.pageBean"/>  
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html><head>
