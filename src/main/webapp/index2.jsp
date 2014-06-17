@@ -13,10 +13,10 @@
 <%
 if(session.getAttribute("name")==null){//判断是否登录
 %>
-<%@include file="top.jsp" %>
+<%@include file="jsp/common/top.jsp" %>
 <%}else {%>
-<%@include file="top2.jsp" %>
+<%@include file="jsp/common/top2.jsp" %>
 <%} %>
-<%@include file="footer.jsp" %>
+<%@include file="jsp/common/footer.jsp" %>
 </body>
 </html:html>

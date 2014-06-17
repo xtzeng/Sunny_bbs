@@ -1,4 +1,4 @@
-package com.wsy.struts.util ;
+package com.xt.lovely.util ;
 import java.io.*;
 
 public class StringTrans

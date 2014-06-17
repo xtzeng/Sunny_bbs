@@ -1,4 +1,4 @@
-package com.wsy.struts.util;
+package com.xt.lovely.util;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -6,7 +6,7 @@ import java.sql.Statement;
 
 import javax.sql.DataSource;
 
-import com.wsy.struts.datasource.DB;
+import com.xt.lovely.datasource.DB;
 
 
 

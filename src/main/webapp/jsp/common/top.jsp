@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="UTF-8" import="java.util.*,com.wsy.struts.util.*"%>
+    pageEncoding="UTF-8" import="java.util.*,com.xt.lovely.util.*"%>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
 <script type="text/javascript">
 <!--

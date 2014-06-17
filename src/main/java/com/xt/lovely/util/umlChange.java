@@ -1,4 +1,4 @@
-package com.wsy.struts.util;
+package com.xt.lovely.util;
 
 public class umlChange {
 	public String Change(String str){

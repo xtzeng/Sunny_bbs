@@ -5,18 +5,19 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
 	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
-	
+	<!--
 	 <filter>
         <filter-name>struts2</filter-name>
         <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
     </filter>
-
+	-->
 	<!-- *.action -->
+	<!--
      <filter-mapping>
         <filter-name>struts2</filter-name>
         <url-pattern>*.do</url-pattern>
     </filter-mapping>
-    
+    -->
 	
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>

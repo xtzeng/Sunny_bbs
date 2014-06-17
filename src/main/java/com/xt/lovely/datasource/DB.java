@@ -1,4 +1,4 @@
-package com.wsy.struts.datasource;
+package com.xt.lovely.datasource;
 import java.sql.*;
 import javax.sql.DataSource;
 public class DB {
