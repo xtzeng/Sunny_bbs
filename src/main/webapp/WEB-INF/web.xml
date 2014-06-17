@@ -11,6 +11,7 @@
         <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
     </filter>
 
+	<!-- *.action -->
      <filter-mapping>
         <filter-name>struts2</filter-name>
         <url-pattern>*.do</url-pattern>
