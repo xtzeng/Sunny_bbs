@@ -10,7 +10,7 @@
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <table border="0" align="left" cellpadding="0" cellspacing="0">
   <tr>
-    <td><img src="images/gl_3.gif" width="198" height="527" border="0" usemap="#Map"></td>
+    <td><img src="../images/gl_3.gif" width="198" height="527" border="0" usemap="#Map"></td>
   </tr>
 </table>
 <map name="Map">

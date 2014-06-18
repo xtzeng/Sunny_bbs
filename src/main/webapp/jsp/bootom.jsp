@@ -10,7 +10,7 @@
 <body>
 <table width="1002" height="124" border="0" cellpadding="0" cellspacing="0">
   <tr>
-    <td background="file:///G|/bbs(2007.11.9)/bbs/WebRoot/images/gl_4.gif">&nbsp;</td>
+    <td background="../images/gl_4.gif">&nbsp;</td>
   </tr>
 </table>
 </body>

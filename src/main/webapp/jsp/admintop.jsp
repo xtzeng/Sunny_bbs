@@ -10,7 +10,7 @@
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <table width="1002" height="210"  border="0" cellpadding="0" cellspacing="0">
   <tr>
-    <td><img src="images/gl01.gif"></td>
+    <td><img src="../images/gl01.gif"></td>
   </tr>
 </table>
 </body>

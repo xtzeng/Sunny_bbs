@@ -136,13 +136,7 @@
 <!-- 结束 -->
 
 <html:form action="newAticle.do">
-	<%session.getAttribute("type"); %>
-	  <%
-  List l=(List)session.getAttribute("listuser");
-  for(int i=0;i<l.size();i++){
-  LoginBean login=(LoginBean)l.get(i);
 
-   %>
 <table  width="1002" height="514" border="0" cellpadding="0" cellspacing="0">
 	<tr>
 		<td>
@@ -443,12 +437,12 @@
 		</td>
 	</tr>
 </table>
-<%}%>
+
   </html:form>
 
 
 
 <!-- 页脚 -->
-<%@include file="footer.jsp" %>
+<%@include file="common/footer.jsp" %>
 </body>
 </html>

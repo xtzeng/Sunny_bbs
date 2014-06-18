@@ -111,7 +111,7 @@ function checkusername(){
 
 //-->
 </script>
-	<script src="JS/onclock.JS"></script>
+	<script src="../JS/onclock.JS"></script>
 	<!--用于显示时间的JavaScript-->
 </head>
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0"
@@ -151,12 +151,12 @@ javascript:window.alert("用户名重复")
 		cellspacing="0">
 		<tr>
 			<td colspan="2">
-				<img src="images/010.gif" alt="" name="Image1" width="1002"
+				<img src="../images/010.gif" alt="" name="Image1" width="1002"
 					height="121" id="Image1">
 			</td>
 		</tr>
 		<tr>
-			<td colspan="2" height="36" background="images/02.gif">
+			<td colspan="2" height="36" background="../images/02.gif">
 				<table width="100%" height="33" border="0">
 					<tr>
 						<td width="6%">
@@ -220,7 +220,7 @@ javascript:window.alert("用户名重复")
 		</tr>
 		<html:form action="login.do" focus="name">
 			<tr>
-				<td width="872" height="63" background="images/03.gif">
+				<td width="872" height="63" background="../images/03.gif">
 
 					<table width="100%" border="0">
 						<tr>
@@ -256,13 +256,13 @@ javascript:window.alert("用户名重复")
 
 				</td>
 				<td width="143">
-					<img src="images/04.gif" alt="" name="Image2" width="130"
+					<img src="../images/04.gif" alt="" name="Image2" width="130"
 						height="63" border="0" usemap="#Map" id="Image2">
 				</td>
 			</tr>
 			<tr>
 				<td colspan="2">
-					<img src="images/05.gif" alt="" name="Image3" width="1002"
+					<img src="../images/05.gif" alt="" name="Image3" width="1002"
 						height="30" id="Image3">
 				</td>
 			</tr>
@@ -290,10 +290,10 @@ javascript:window.alert("用户名重复")
 		<html:form action="registermanager.do">
 			<tr>
 				<td rowspan="2">
-					<img src="images/zc_01.gif" width="448" height="484">
+					<img src="../images/zc_01.gif" width="448" height="484">
 				</td>
 				<td width="554" height="484" valign="top"
-					background="images/zc_02.gif">
+					background="../images/zc_02.gif">
 					<table width="100%" border="0" height="374">
 						<tr>
 							<td width="64" class="zczi">
@@ -406,7 +406,7 @@ javascript:window.alert("用户名重复")
 								<%
 								if (session.getAttribute("tx") == null)
 								%>
-								<img src="images/touxiang/2.gif" id="img">
+								<img src="../images/touxiang/2.gif" id="img">
 								<!--%}else{ %>
             <img src="images/touxiang/<!--%=tx %>" width="60" height="60">
             <!--%} %-->
@@ -518,6 +518,6 @@ javascript:window.alert("用户名重复")
 	session.removeAttribute("checkuser");
 	%>
 	<!-- 页脚 -->
-	<%@include file="footer.jsp"%>
+	<%@include file="common/footer.jsp"%>
 </body>
 </html:html>
